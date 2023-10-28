@@ -24,4 +24,5 @@ public class PersistenceException extends Exception {
     public enum ExceptionType {
         ImplementationNotAvailable, ConnectionNotAvailable, NoStrategyIsSet
     }
+
 }

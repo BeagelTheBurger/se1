@@ -2,15 +2,25 @@ package org.hbrs.se1.ws23.uebung1.control;
 
 public class GermanTranslator implements Translator {
 
+	private final String[] zahlen = {"eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht","neun", "zehn"};
+
+
 	public String date = "Okt/2023"; // Default-Wert
 
 	/**
 	 * Methode zur Übersetzung einer Zahl in eine String-Repraesentation
 	 */
-	public String translateNumber( int number ) {
+	public String translateNumber( int number )  { // gebe die schriftliche Schreibweise für die Zahlen 1 -10 zurück
 		// [ihr Source Code aus Übung 1-2]
 
-		return "null";
+		try {
+			// Hier wird zahlen um 1 verringert, da das Array an der Index Nr. 0 die 1 hat.
+			return zahlen[number -1];
+
+		} catch (ArrayIndexOutOfBoundsException e) {
+			return "Übersetzung der Zahl " + number + " nicht möglich (" + Translator.version + ")";
+		}
+
 	}
 
 	/**

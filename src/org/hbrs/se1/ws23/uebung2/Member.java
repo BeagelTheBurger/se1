@@ -7,5 +7,7 @@ public interface Member {
      * Die ID dient als Primärschlüssel zur Unterscheidung aller Member-Objekte.
      */
     
-    public Integer getID();
+    public int getID(); // Liefert die ID des Member-Objekts
+
+    public String toString(); // Methode zur Ausgabe aller Objektattribute als String
 }
