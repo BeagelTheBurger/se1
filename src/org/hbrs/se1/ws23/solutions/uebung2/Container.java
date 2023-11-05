@@ -1,5 +1,9 @@
 package org.hbrs.se1.ws23.solutions.uebung2;
 
+import org.hbrs.se1.ws23.uebung3.persistence.PersistenceException;
+import org.hbrs.se1.ws23.uebung3.persistence.PersistenceStrategy;
+
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -14,7 +18,26 @@ public class Container {
 	 * bei der Bewahrung der Konsistenz vom Key und Value (siehe TestStore, letzter Test)
 	 */
 	private List<Member> liste = new ArrayList<Member>();
-	
+	private static Container container = null;
+	private PersistenceStrategy<Member> strategy = null;  // Referenz auf das Interface, um die Strategie flexibel setzen zu koennen
+
+
+	public void setPersistenceStrategy( PersistenceStrategy<Member> strategy ) {
+		this.strategy = strategy;
+	}
+
+	private Container() {
+
+		container = new Container();
+
+	}
+
+	public static Container getInstance() {
+		if (container == null) {
+			container = new Container();
+		}
+		return container;
+	}
 	
 	/*
 	 * Methode zum Hinzufuegen einer Member.
@@ -165,5 +188,55 @@ public class Container {
 		}
 		return null;
 	}
+
+
+	/**
+	 *  Methode zum persistenten Speichern der Member-Objekte
+	 * @throws PersistenceException
+	 *
+	 */
+	public void store() throws PersistenceException {
+
+		try {
+			FileOutputStream fos = new FileOutputStream("store.txt");
+			ObjectOutputStream os = new ObjectOutputStream(fos);
+			os.writeObject(liste);
+			os.close();
+			fos.close();
+		}
+		catch (FileNotFoundException e) {
+			throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "File not found");
+		} catch (IOException e) {
+			throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "IO Exception");
+		}
+
+	}
+
+	/**
+	 * Methode zum Laden der Member-Objekte
+	 * @throws PersistenceException
+	 * @throws IOException
+	 * @throws ClassNotFoundException
+	 */
+
+	@SuppressWarnings("unchecked")
+	public void load() throws PersistenceException {
+		try {
+			FileInputStream fis = new FileInputStream("store.txt");
+			ObjectInputStream ois = new ObjectInputStream(fis);
+			liste = (ArrayList<Member>) ois.readObject();
+			ois.close();
+			fis.close();
+		} catch (FileNotFoundException e) {
+			throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "File not found");
+		} catch (IOException e) {
+			throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "IO Exception");
+		} catch (ClassNotFoundException e) {
+			throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Class not found");
+		}
+
+	}
+
+
 
 }

@@ -25,3 +25,4 @@ public class PersistenceException extends Exception {
         ImplementationNotAvailable, ConnectionNotAvailable, NoStrategyIsSet
     }
 }
+// IOException, ClassNotFoundException, FileNotFoundException
