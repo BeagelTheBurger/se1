@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="063a1c3f-c372-4889-8348-dda135fe90f3" name="Changes" comment="" />
+    <list default="true" id="ed79f40a-cfd5-410f-9430-833a614ac167" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/Container.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/ContainerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/MemberKonkret.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws23/uebung3/ContainerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes2023.iml" beforeDir="false" afterPath="$PROJECT_DIR$/codes2023.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/solutions/uebung2/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/solutions/uebung2/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung2/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung2/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/org/hbrs/se1/ws23/solutions/uebung2/test/ContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws23/solutions/uebung2/test/ContainerTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -25,123 +37,112 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectId" id="2WcTG6Y6eA1d9IxqpFJcxZMzMLN" />
+  <component name="ProjectId" id="2XqURv43MJePBqgQDHHV8DqkvYR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;org.hbrs.se1.ws23.uebung1.test&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/luke/Dokumente/Uni-Cyber/5.Semesterlala/SE1&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
-      <recent name="org.hbrs.se1.ws23.uebung1.test" />
-      <recent name="org.hbrs.se1.ws23.uebung1.test.FactoryTest" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="org.hbrs.se1.ws23.uebung1.control" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="org.hbrs.se1.ws23.uebung2.test" />
       <recent name="" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.hbrs.se1.ws23.uebung3" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContainerTest.size">
-    <configuration name="ContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codesSE2023" />
+  <component name="RunManager" selected="JUnit.ContainerTest.persistentLoad">
+    <configuration name="ContainerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codes2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws23.uebung2.test.*" />
+          <option name="PATTERN" value="org.hbrs.se1.ws23.solutions.uebung2.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws23.uebung2.test" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws23.uebung2.test.ContainerTest" />
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws23.solutions.uebung2.test" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws23.solutions.uebung2.test.ContainerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainerTest.deleteMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codesSE2023" />
+    <configuration name="ContainerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codes2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws23.uebung2.test.*" />
+          <option name="PATTERN" value="org.hbrs.se1.ws23.uebung3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws23.uebung2.test" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws23.uebung2.test.ContainerTest" />
-      <option name="METHOD_NAME" value="deleteMember" />
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws23.uebung3" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws23.uebung3.ContainerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContainerTest.persistentLoad" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codes2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws23.uebung3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws23.uebung3" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws23.uebung3.ContainerTest" />
+      <option name="METHOD_NAME" value="persistentLoad" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainerTest.size" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codesSE2023" />
+    <configuration name="ContainerTest.persistentStore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codes2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws23.uebung2.test.*" />
+          <option name="PATTERN" value="org.hbrs.se1.ws23.uebung3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws23.uebung2.test" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws23.uebung2.test.ContainerTest" />
-      <option name="METHOD_NAME" value="size" />
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws23.uebung3" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws23.uebung3.ContainerTest" />
+      <option name="METHOD_NAME" value="persistentStore" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainerTest.testAddMember" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codesSE2023" />
+    <configuration name="ContainerTest.testAufNullVerschiedeneWege" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codes2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws23.uebung2.test.*" />
+          <option name="PATTERN" value="org.hbrs.se1.ws23.solutions.uebung2.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws23.uebung2.test" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws23.uebung2.test.ContainerTest" />
-      <option name="METHOD_NAME" value="testAddMember" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContainerTest.testDump" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codesSE2023" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws23.uebung2.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws23.uebung2.test" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws23.uebung2.test.ContainerTest" />
-      <option name="METHOD_NAME" value="testDump" />
+      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws23.solutions.uebung2.test" />
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws23.solutions.uebung2.test.ContainerTest" />
+      <option name="METHOD_NAME" value="testAufNullVerschiedeneWege" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,98 +150,54 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContainerTest.size" />
-        <item itemvalue="JUnit.ContainerTest.testDump" />
-        <item itemvalue="JUnit.ContainerTest.deleteMember" />
-        <item itemvalue="JUnit.ContainerTest.testAddMember" />
+        <item itemvalue="JUnit.ContainerTest.persistentLoad" />
+        <item itemvalue="JUnit.ContainerTest.persistentStore" />
         <item itemvalue="JUnit.ContainerTest" />
+        <item itemvalue="JUnit.ContainerTest.testAufNullVerschiedeneWege" />
+        <item itemvalue="JUnit.ContainerTest (1)" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="063a1c3f-c372-4889-8348-dda135fe90f3" name="Changes" comment="" />
-      <created>1697030769588</created>
+      <changelist id="ed79f40a-cfd5-410f-9430-833a614ac167" name="Changes" comment="" />
+      <created>1699356103853</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1697030769588</updated>
-      <workItem from="1697481075502" duration="281000" />
-      <workItem from="1697546088454" duration="2130000" />
-      <workItem from="1697562755444" duration="1255000" />
-      <workItem from="1697628669429" duration="1854000" />
-      <workItem from="1697632438800" duration="758000" />
-      <workItem from="1697877467113" duration="4495000" />
-      <workItem from="1698177272069" duration="907000" />
-      <workItem from="1698234819600" duration="3472000" />
-      <workItem from="1698421948634" duration="387000" />
-      <workItem from="1698478801998" duration="2262000" />
-      <workItem from="1698483978723" duration="372000" />
+      <updated>1699356103853</updated>
+      <workItem from="1699356105666" duration="7312000" />
     </task>
-    <task id="LOCAL-00001" summary="Erste Version, unvollständig">
-      <created>1698482833806</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1698482833806</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Erste Version, unvollständig">
-      <created>1698483117260</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1698483117260</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Revert &quot;Erste Version, unvollständig&quot;&#10;&#10;This reverts commit 690c85ef">
-      <created>1698483484915</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1698483484915</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Revert &quot;Erste Version, unvollständig&quot;&#10;&#10;This reverts commit 690c85efaa2572218a978468a52d36afbc576b2c.&#10;&#10;# Conflicts:&#10;#&#9;src/org/hbrs/se1/ws23/uebung2/Container.java">
-      <created>1698484276906</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1698484276906</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ID_ORDER">
-      <list>
-        <option value="Default.Root" />
-        <option value="Default.Author" />
-        <option value="Default.Date" />
-        <option value="Default.Subject" />
-        <option value="Space.CommitStatus" />
-      </list>
-    </option>
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Erste Version, unvollständig" />
-    <MESSAGE value="Revert &quot;Erste Version, unvollständig&quot;&#10;&#10;This reverts commit 690c85ef" />
-    <MESSAGE value="Revert &quot;Erste Version, unvollständig&quot;&#10;&#10;This reverts commit 690c85efaa2572218a978468a52d36afbc576b2c.&#10;&#10;# Conflicts:&#10;#&#9;src/org/hbrs/se1/ws23/uebung2/Container.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Erste Version, unvollständig&quot;&#10;&#10;This reverts commit 690c85efaa2572218a978468a52d36afbc576b2c.&#10;&#10;# Conflicts:&#10;#&#9;src/org/hbrs/se1/ws23/uebung2/Container.java" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/Container.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/test/org/hbrs/se1/ws23/uebung3/ContainerTest.java</url>
+          <line>77</line>
+          <properties class="org.hbrs.se1.ws23.uebung3.ContainerTest" method="persistentStore">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -28,7 +28,7 @@ public class Container {
 
 	private Container() {
 
-		container = new Container();
+		container = Container.getInstance();
 
 	}
 

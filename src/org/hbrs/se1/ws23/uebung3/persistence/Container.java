@@ -1,24 +1,14 @@
-package org.hbrs.se1.ws23.uebung2;
+package org.hbrs.se1.ws23.uebung3.persistence;
 
-import org.hbrs.se1.ws23.solutions.uebung2.ContainerException;
-import org.hbrs.se1.ws23.uebung3.persistence.MemberView;
-import org.hbrs.se1.ws23.uebung3.persistence.PersistenceException;
-
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.util.ArrayList;
 
-public class Container {
-
+public class Container implements Serializable {
     private static Container container = null;
     private ArrayList<Member> list;
 
     private Container() {
-
-        this.list = new ArrayList<Member>();
-
+        this.list = new ArrayList<>();
     }
 
     public static Container getInstance() {
@@ -28,10 +18,7 @@ public class Container {
         return container;
     }
 
-
-
     public void addMember(Member member) throws ContainerException {
-
         if (member == null) {
             ContainerException e = new ContainerException();
             throw e;
@@ -46,7 +33,7 @@ public class Container {
 
     public String deleteMember(Integer id) {
         for (Member member : list) {
-            if (member.getID() == id) {
+            if (member.getID().equals(id)) {
                 list.remove(member);
                 return "Member mit der ID " + id + " wurde gelöscht.";
             }
@@ -54,35 +41,37 @@ public class Container {
         return "Member mit der ID " + id + " wurde nicht gefunden.";
     }
 
-    public void dump() {
-        for (Member member : list) {
-            System.out.println(member.toString());
-        }
-    }
     public int size() {
         return list.size();
     }
 
     public void store() throws PersistenceException {
-
         try {
             FileOutputStream fos = new FileOutputStream("store.txt");
             ObjectOutputStream os = new ObjectOutputStream(fos);
-            os.writeObject(list);
+            for (Member member : list) {
+                os.writeObject(member);
+            }
             os.close();
             fos.close();
-        }
-        catch (FileNotFoundException e) {
-            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "File not found");
         } catch (IOException e) {
             throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "IO Exception");
+        } finally {
+            System.out.println("Daten wurden gespeichert");
         }
-        finally {
-            dump();
-        }
-
-        
-
     }
 
+    public void load() throws PersistenceException {
+        try {
+            FileInputStream fis = new FileInputStream("store.txt");
+            ObjectInputStream is = new ObjectInputStream(fis);
+            list = (ArrayList<Member>) is.readObject();
+            is.close();
+            fis.close();
+        } catch (IOException | ClassNotFoundException e) {
+            throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Fehler beim Laden der Daten");
+        } finally {
+            System.out.println("Daten wurden geladen");
+        }
+    }
 }
