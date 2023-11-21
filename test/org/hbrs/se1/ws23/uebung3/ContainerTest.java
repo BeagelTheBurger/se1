@@ -80,6 +80,7 @@ class ContainerTest {
         container.store();
 
     }
+    // Die Ladefunktion ist nicht implementiert, daher wird hier eine Exception erwartet
     @Test
     void persistentLoad() throws PersistenceException{
 

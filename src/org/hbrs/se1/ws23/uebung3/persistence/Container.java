@@ -5,13 +5,13 @@ import java.util.ArrayList;
 
 public class Container implements Serializable {
     private static Container container = null;
-    private ArrayList<Member> list;
+    private ArrayList<Member> list;  // list ist abstrakter und damit vielseitiger als ArrayList
 
     private Container() {
         this.list = new ArrayList<>();
     }
 
-    public static Container getInstance() {
+    public static synchronized Container getInstance() { // damit der Block abgearbeitet wird, bevor der nächste startet braucht man 'synchronized'
         if (container == null) {
             container = new Container();
         }
@@ -65,9 +65,14 @@ public class Container implements Serializable {
         try {
             FileInputStream fis = new FileInputStream("store.txt");
             ObjectInputStream is = new ObjectInputStream(fis);
-            list = (ArrayList<Member>) is.readObject();
-            is.close();
-            fis.close();
+            while (true) {
+                try {
+                    Member member = (Member) is.readObject();
+                    list.add(member);
+                } catch (EOFException e) {
+                    break;
+                }
+            }
         } catch (IOException | ClassNotFoundException e) {
             throw new PersistenceException(PersistenceException.ExceptionType.ConnectionNotAvailable, "Fehler beim Laden der Daten");
         } finally {

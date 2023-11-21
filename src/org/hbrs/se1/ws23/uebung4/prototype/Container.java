@@ -1,5 +1,8 @@
 package org.hbrs.se1.ws23.uebung4.prototype;
 
+import org.hbrs.se1.ws23.uebung3.persistence.PersistenceException;
+import org.hbrs.se1.ws23.uebung3.persistence.PersistenceStrategy;
+
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -32,228 +35,110 @@ import java.util.stream.Collectors;
  */
 
 public class Container {
-	 
-	// Interne ArrayList zur Abspeicherung der Objekte vom Type UserStory
-	private List<UserStory> liste = null;
-	
-	// Statische Klassen-Variable, um die Referenz
-	// auf das einzige Container-Objekt abzuspeichern
-	// Diese Variante sei thread-safe, so hat Hr. P. es gehört... stimmt das?
-	// Todo: Bewertung Thread-Safeness (F1)
-	// Nachteil: ggf. geringer Speicherbedarf, da Singleton zu Programmstart schon erzeugt wird
-	// Todo: Bewertung Speicherbedarf (F1)
-	private static Container instance = new Container();
-	
-	// URL der Datei, in der die Objekte gespeichert werden 
-	final static String LOCATION = "allStories.ser";
 
-	/**
-	 * Liefert ein Singleton zurück.
-	 * @return
-	 */
-	public static Container getInstance() {
+	private List<UserStory> liste = null;
+
+	private static Container instance = null;
+
+	private PersistenceStrategy strategy = null;
+
+	private boolean connectionOpen = false;
+
+	public static synchronized Container getInstance() {
+		if (instance == null) {
+			instance = new Container();
+			System.out.println("Objekt vom Typ Container wurde instanziiert!");
+		}
 		return instance;
 	}
-	
-	/**
-	 * Vorschriftsmäßiges Ueberschreiben des Konstruktors (private) gemaess Singleton-Pattern (oder?)
-	 * Nun auf private gesetzt! Vorher ohne Access Qualifier (--> dann package-private)
-	 */
-	Container(){
-		liste = new ArrayList<UserStory>();
-	}
-	
-	/**
-	 * Start-Methoden zum Starten des Programms 
-	 * (hier koennen ggf. weitere Initialisierungsarbeiten gemacht werden spaeter)
-	 */
-	public static void main (String[] args) throws Exception {
-		// ToDo: Bewertung Exception-Handling (F3, F7)
-		Container con = Container.getInstance();
-		con.startEingabe(); 
-	}
-	
-	/*
-	 * Diese Methode realisiert eine Eingabe ueber einen Scanner
-	 * Alle Exceptions werden an den aufrufenden Context (hier: main) weitergegeben (throws)
-	 * Das entlastet den Entwickler zur Entwicklungszeit und den Endanwender zur Laufzeit
-	 */
-	public void startEingabe() throws ContainerException, Exception {
-		String strInput = null;
-		
-		// Initialisierung des Eingabe-View
-		// ToDo: Funktionsweise des Scanners erklären (F3)
-		Scanner scanner = new Scanner( System.in );
 
-		while ( true ) {
-			// Ausgabe eines Texts zur Begruessung
-			System.out.println("UserStory-Tool V1.0 by Julius P. (dedicated to all my friends)");
-
-			System.out.print( "> "  );
-
-			strInput = scanner.nextLine();
-		
-			// Extrahiert ein Array aus der Eingabe
-			String[] strings = strInput.split(" ");
-
-			// 	Falls 'help' eingegeben wurde, werden alle Befehle ausgedruckt
-			if ( strings[0].equals("help") ) {
-				System.out.println("Folgende Befehle stehen zur Verfuegung: help, dump....");
-			}
-			// Auswahl der bisher implementierten Befehle:
-			if ( strings[0].equals("dump") ) {
-				startAusgabe();
-			}
-			// Auswahl der bisher implementierten Befehle:
-			if ( strings[0].equals("enter") ) {
-				// Daten einlesen ...
-				// this.addUserStory( new UserStory( data ) ) um das Objekt in die Liste einzufügen.
-			}
-								
-			if (  strings[0].equals("store")  ) {
-				// Beispiel-Code
-				UserStory userStory = new UserStory();
-				userStory.setId(22);
-				this.addUserStory( userStory );
-				this.store();
-			}
-		} // Ende der Schleife
+	private Container() {
+		System.out.println("Container ist instanziiert (Konstruktor)!");
+		this.liste = new ArrayList<UserStory>();
 	}
 
-	/**
-	 * Diese Methode realisiert die Ausgabe.
-	 */
-	public void startAusgabe() {
-
-		// Hier möchte Herr P. die Liste mit einem eigenen Sortieralgorithmus sortieren und dann
-		// ausgeben. Allerdings weiss der Student hier nicht weiter
-
-		// [Sortierung ausgelassen]
-		// Todo: Implementierung Sortierung (F4)
-
-		// Klassische Ausgabe ueber eine For-Each-Schleife
-		for (UserStory story : liste) {
-			System.out.println(story.toString());
-		}
-
-		// [Variante mit forEach-Methode / Streams (--> Kapitel 9, Lösung Übung Nr. 2)?
-		//  Gerne auch mit Beachtung der neuen US1
-		// (Filterung Projekt = "ein Wert (z.B. Coll@HBRS)" und Risiko >=5
-		// Todo: Implementierung Filterung mit Lambda (F5)
-
+	public List getCurrentList() {
+		return  this.liste;
 	}
 
-	/*
-	 * Methode zum Speichern der Liste. Es wird die komplette Liste
-	 * inklusive ihrer gespeicherten UserStory-Objekte gespeichert.
-	 * 
-	 */
-	private void store() throws ContainerException {
-		ObjectOutputStream oos = null;
-		FileOutputStream fos = null;
-		try {
-			fos = new FileOutputStream( Container.LOCATION );
-			oos = new ObjectOutputStream(fos);
-			
-			oos.writeObject( this.liste );
-			System.out.println( this.size() + " UserStory wurden erfolgreich gespeichert!");
+	public void addUserStorie (UserStory r) {
+		if(contains(r)) {
+			System.out.println("Duplikat: " + r.toString());
 		}
-		catch (IOException e) {
-			e.printStackTrace();
-		  //  Delegation in den aufrufendem Context
-		  // (Anwendung Pattern "Chain Of Responsibility)
-		  throw new ContainerException("Fehler beim Abspeichern");
-		}
+		liste.add(r);
 	}
 
-	/*
-	 * Methode zum Laden der Liste. Es wird die komplette Liste
-	 * inklusive ihrer gespeicherten UserStory-Objekte geladen.
-	 * 
-	 */
-	public void load() {
-		ObjectInputStream ois = null;
-		FileInputStream fis = null;
-		try {
-		  fis = new FileInputStream( Container.LOCATION );
-		  ois = new ObjectInputStream(fis);
-		  
-		  // Auslesen der Liste
-		  Object obj = ois.readObject();
-		  if (obj instanceof List<?>) {
-			  this.liste = (List) obj;
-		  }
-		  System.out.println("Es wurden " + this.size() + " UserStory erfolgreich reingeladen!");
-		}
-		catch (IOException e) {
-			System.out.println("LOG (für Admin): Datei konnte nicht gefunden werden!");
-		}
-		catch (ClassNotFoundException e) {
-			System.out.println("LOG (für Admin): Liste konnte nicht extrahiert werden (ClassNotFound)!");
-		}
-		finally {
-		  if (ois != null) try { ois.close(); } catch (IOException e) {}
-		  if (fis != null) try { fis.close(); } catch (IOException e) {}
-		}
-	}
-
-	/**
-	 * Methode zum Hinzufügen eines Mitarbeiters unter Wahrung der Schlüsseleigenschaft
-	 * @param userStory
-	 * @throws ContainerException
-	 */
-	public void addUserStory ( UserStory userStory ) throws ContainerException {
-		if ( contains(userStory) == true ) {
-			ContainerException ex = new ContainerException("ID bereits vorhanden!");
-			throw ex;
-		}
-		liste.add(userStory);
-	}
-
-	/**
-	 * Prüft, ob eine UserStory bereits vorhanden ist
-	 * @param userStory
-	 * @return
-	 */
-	private boolean contains( UserStory userStory) {
-		int ID = userStory.getId();
-		for ( UserStory userStory1 : liste) {
-			if ( userStory1.getId() == ID ) {
+	boolean contains(UserStory r) {
+		Integer ID = r.getID();
+		for ( UserStory rec : liste) {
+			if (rec.getID() == ID) {
 				return true;
 			}
 		}
 		return false;
 	}
-
-	/**
-	 * Ermittlung der Anzahl von internen UserStory
-	 * -Objekten
-	 * @return
-	 */
 	public int size() {
 		return liste.size();
 	}
 
-	/**
-	 * Methode zur Rückgabe der aktuellen Liste mit Stories
-	 * Findet aktuell keine Anwendung bei Hr. P.
-	 * @return
-	 */
-	public List<UserStory> getCurrentList() {
-		return this.liste;
-	}
-
-	/**
-	 * Liefert eine bestimmte UserStory zurück
-	 * @param id
-	 * @return
-	 */
-	private UserStory getUserStory(int id) {
-		for ( UserStory userStory : liste) {
-			if (id == userStory.getId() ){
-				return userStory;
+	public void setPersistenceStrategie(PersistenceStrategy persistenceStrategy) {
+		if (connectionOpen == true) {
+			try {
+				this.closeConnection();
+			} catch (PersistenceException e) {
+				// ToDo here: delegate to client (next year maybe ;-))
+				e.printStackTrace();
 			}
 		}
-		return null;
+		this.strategy = persistenceStrategy;
+	}
+	private void openConnection() throws PersistenceException {
+		try {
+			this.strategy.openConnection();
+			connectionOpen = true;
+		} catch( UnsupportedOperationException e ) {
+			throw new PersistenceException(
+					PersistenceException.ExceptionType.ImplementationNotAvailable ,
+					"Not implemented!" );
+		}
+	}
+
+	private void closeConnection() throws PersistenceException {
+		try {
+			this.strategy.closeConnection();
+			connectionOpen = false;
+		} catch( UnsupportedOperationException e ) {
+			throw new PersistenceException( PersistenceException.ExceptionType.ImplementationNotAvailable , "Not implemented!" );
+		}
+	}
+
+	public void store() throws PersistenceException {
+		if (this.strategy == null)
+			throw new PersistenceException( PersistenceException.
+					ExceptionType.NoStrategyIsSet,
+					"Strategy not initialized");
+
+		if (connectionOpen == false) {
+			this.openConnection();
+			connectionOpen = true;
+		}
+		this.strategy.save( this.liste  );
+	}
+
+	public void load() throws PersistenceException {
+		if (this.strategy == null)
+			throw new PersistenceException( PersistenceException.ExceptionType.NoStrategyIsSet,
+					"Strategy not initialized");
+
+		if (connectionOpen == false) {
+			this.openConnection();
+			connectionOpen = true;
+		}
+		List<UserStory> liste = this.strategy.load();
+		this.liste = liste; // MayBe merge
 	}
 }
+
+// F1: mehr Speicherbedarf, da das Objekt schon vorher erstellt wird.
+// Methoden auslagern, anders strukturieren, hier ist alles zusammen(main, methoden, dies und das )
+//Fehlermeldung von store wird nicht in store,startEingabe oder main behandelt

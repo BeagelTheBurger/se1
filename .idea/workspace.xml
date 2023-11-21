@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed79f40a-cfd5-410f-9430-833a614ac167" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/Container.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/ContainerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/MemberKonkret.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws23/uebung3/ContainerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allStories.ser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung4/prototype/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung4/prototype/Eingabeaufforderung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung4/prototype/UserStoryView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes2023.iml" beforeDir="false" afterPath="$PROJECT_DIR$/codes2023.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/solutions/uebung2/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/solutions/uebung2/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung2/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung2/Container.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/org/hbrs/se1/ws23/solutions/uebung2/test/ContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws23/solutions/uebung2/test/ContainerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/PersistenceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/PersistenceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/PersistenceStrategyStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/PersistenceStrategyStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung4/prototype/Container.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung4/prototype/Container.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung4/prototype/UserStory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung4/prototype/UserStory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/org/hbrs/se1/ws23/uebung3/ContainerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/org/hbrs/se1/ws23/uebung3/ContainerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,21 +43,21 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -69,18 +66,29 @@
       <recent name="org.hbrs.se1.ws23.uebung3" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContainerTest.persistentLoad">
-    <configuration name="ContainerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws23.uebung4.prototype.Client" />
       <module name="codes2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws23.solutions.uebung2.test.*" />
+          <option name="PATTERN" value="org.hbrs.se1.ws23.uebung4.prototype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws23.solutions.uebung2.test" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws23.solutions.uebung2.test.ContainerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Container" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws23.uebung4.prototype.Container" />
+      <module name="codes2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hbrs.se1.ws23.uebung4.prototype.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,29 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContainerTest.testAufNullVerschiedeneWege" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codes2023" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.hbrs.se1.ws23.solutions.uebung2.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.hbrs.se1.ws23.solutions.uebung2.test" />
-      <option name="MAIN_CLASS_NAME" value="org.hbrs.se1.ws23.solutions.uebung2.test.ContainerTest" />
-      <option name="METHOD_NAME" value="testAufNullVerschiedeneWege" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Container" />
         <item itemvalue="JUnit.ContainerTest.persistentLoad" />
         <item itemvalue="JUnit.ContainerTest.persistentStore" />
         <item itemvalue="JUnit.ContainerTest" />
-        <item itemvalue="JUnit.ContainerTest.testAufNullVerschiedeneWege" />
-        <item itemvalue="JUnit.ContainerTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -166,8 +158,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699356103853</updated>
-      <workItem from="1699356105666" duration="7312000" />
+      <workItem from="1699356105666" duration="7738000" />
+      <workItem from="1699452729618" duration="2542000" />
+      <workItem from="1699956941219" duration="90000" />
+      <workItem from="1699957152952" duration="1098000" />
+      <workItem from="1700047783767" duration="164000" />
+      <workItem from="1700052007940" duration="4540000" />
+      <workItem from="1700566365610" duration="8073000" />
     </task>
+    <task id="LOCAL-00001" summary="Übung3 (unvollständig, denn ich weiß nicht mehr weiter :P)">
+      <created>1699377682771</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699377682771</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +181,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Übung3 (unvollständig, denn ich weiß nicht mehr weiter :P)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Übung3 (unvollständig, denn ich weiß nicht mehr weiter :P)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -183,11 +191,10 @@
           <properties class="java.lang.StackOverflowError" package="java.lang" />
           <option name="timeStamp" value="2" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/org/hbrs/se1/ws23/uebung3/persistence/Container.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.hbrs.se1.ws23.uebung4.prototype.ContainerException" package="org.hbrs.se1.ws23.uebung4.prototype" />
+          <option name="timeStamp" value="10" />
+        </breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/test/org/hbrs/se1/ws23/uebung3/ContainerTest.java</url>
           <line>77</line>
