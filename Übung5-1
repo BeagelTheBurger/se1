@@ -1,0 +1,126 @@
+<mxfile host="app.diagrams.net" modified="2023-11-28T11:07:54.856Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0" etag="tkbGQ6QtAwKaf3DDBpkl" version="22.1.4" type="github">
+  <diagram name="Page-1" id="ZWhp1XGwrc4be9mz8kel">
+    <mxGraphModel dx="1434" dy="651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="50" width="376" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-2" value="&lt;div&gt;Registrierung Benutzer&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="60" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MnY0Aaij6uocOL5gSc5U-3" target="MnY0Aaij6uocOL5gSc5U-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-3" value="Reg. Unternehmer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="80" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MnY0Aaij6uocOL5gSc5U-4" target="MnY0Aaij6uocOL5gSc5U-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-4" value="Reg. Studenten" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-5" value="Benutzer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-6" value="Studenten" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-7" value="Unternehmer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-9" value="Benutzer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="40" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MnY0Aaij6uocOL5gSc5U-10" target="MnY0Aaij6uocOL5gSc5U-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="860" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-10" value="Studenten" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MnY0Aaij6uocOL5gSc5U-11" target="MnY0Aaij6uocOL5gSc5U-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1050" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1050" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MnY0Aaij6uocOL5gSc5U-11" target="MnY0Aaij6uocOL5gSc5U-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1050" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1050" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MnY0Aaij6uocOL5gSc5U-11" target="MnY0Aaij6uocOL5gSc5U-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1050" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-11" value="Unternehmer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-12" value="Login Benutzer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="488" y="180" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-13" value="Profilverwaltung" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-14" value="Projektausschreibungen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="585" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MnY0Aaij6uocOL5gSc5U-15" target="MnY0Aaij6uocOL5gSc5U-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-15" value="Suchanfragen für Skills" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="390" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-16" value="Projektplanung" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="516" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-17" value="Extraktion und Verwaltung von stud. Stammdaten" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="530" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-18" value="SIS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="MnY0Aaij6uocOL5gSc5U-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="170" as="sourcePoint" />
+            <mxPoint x="180" y="120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="130" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-28" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="MnY0Aaij6uocOL5gSc5U-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="190" as="sourcePoint" />
+            <mxPoint x="610" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MnY0Aaij6uocOL5gSc5U-32" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#FF99CC;" edge="1" parent="1" source="MnY0Aaij6uocOL5gSc5U-9" target="MnY0Aaij6uocOL5gSc5U-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="190" as="sourcePoint" />
+            <mxPoint x="610" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
