@@ -1,9 +1,62 @@
-<mxfile host="app.diagrams.net" modified="2023-12-05T13:35:25.152Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0" version="22.1.5" etag="iChANrOrR0876PX6RXq7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-05T13:46:49.128Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0" etag="s6PWa4wP0hFVl7qTiFvV" version="22.1.5" type="github">
   <diagram name="Page-1" id="PW1UUrU6OcrJpeJHGy7r">
-    <mxGraphModel>
+    <mxGraphModel dx="1320" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="zKf0h70x7wIFrP5PDmHz-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zKf0h70x7wIFrP5PDmHz-1" target="zKf0h70x7wIFrP5PDmHz-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object label="Benutzer" Benutzer="" id="zKf0h70x7wIFrP5PDmHz-1">
+          <mxCell style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+            <mxGeometry x="-820" y="70" width="30" height="60" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="zKf0h70x7wIFrP5PDmHz-4" value="Unternehmer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-820" y="410" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zKf0h70x7wIFrP5PDmHz-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zKf0h70x7wIFrP5PDmHz-8" target="zKf0h70x7wIFrP5PDmHz-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zKf0h70x7wIFrP5PDmHz-8" value="Login Benutzer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-710" y="60" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zKf0h70x7wIFrP5PDmHz-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zKf0h70x7wIFrP5PDmHz-10" target="zKf0h70x7wIFrP5PDmHz-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zKf0h70x7wIFrP5PDmHz-10" value="Unternehmer registriert sich" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-680" y="400" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zKf0h70x7wIFrP5PDmHz-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zKf0h70x7wIFrP5PDmHz-12" target="zKf0h70x7wIFrP5PDmHz-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zKf0h70x7wIFrP5PDmHz-12" value="Projektausschreibung aufgeben" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-580" y="490" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zKf0h70x7wIFrP5PDmHz-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zKf0h70x7wIFrP5PDmHz-15" target="zKf0h70x7wIFrP5PDmHz-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zKf0h70x7wIFrP5PDmHz-15" value="Bankdaten ermitteln" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-400" y="260" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zKf0h70x7wIFrP5PDmHz-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zKf0h70x7wIFrP5PDmHz-17" target="zKf0h70x7wIFrP5PDmHz-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zKf0h70x7wIFrP5PDmHz-17" value="Bankeinzu durchführen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="490" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zKf0h70x7wIFrP5PDmHz-20" value="Unternehmer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="270" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zKf0h70x7wIFrP5PDmHz-21" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="zKf0h70x7wIFrP5PDmHz-15" target="zKf0h70x7wIFrP5PDmHz-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-90" y="450" as="sourcePoint" />
+            <mxPoint x="-40" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-180" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
